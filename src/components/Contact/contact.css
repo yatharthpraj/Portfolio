@@ -1,0 +1,180 @@
+#contact {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  height: 25rem;
+  width: 30%;
+  padding: 1.5rem ;
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  /* align-items: left; */
+  justify-content: center;
+  gap: 2rem;
+  color: black;
+  /* background-image: linear-gradient(135deg, rgba(128, 43, 232, 0.218) 50%, #ffffff 100%); */
+  /* background-image: url("./assets/wave-haikei.png"); */
+  background-color: #fff;
+  backdrop-filter: blur(50px);
+  z-index: 1000;
+  }
+
+.contact-close-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.close-btn{
+  height: fit-content;
+  cursor: pointer;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.2rem;
+  transition: 0.2s;
+  &:hover{
+    background-color: #e4e4e4c6;
+  }
+}
+.contact-container {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+}
+
+ #contact h4 {
+  font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  /* max-width: 60%; */
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+
+
+/* From Uiverse.io by foxyyyyyyyyyyyyy */ 
+.form-control {
+  position: relative;
+  margin: 1.5rem 0 ;
+  width: 100%;
+
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 1rem 0;
+  
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: #8a2be2;
+}
+
+.form-control label {
+  transform: translateY(0px);
+  position: absolute;
+  top: 10px;
+  left: 0;
+  /* pointer-events: none; */
+}
+
+.form-control label span {
+  margin-right: 0.2rem;
+  display: inline-block;
+  font-size: 16px;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:not(:placeholder-shown) + label span {
+  transform: translateY(-30px);
+  color: black;
+}
+/* From Uiverse.io by mpody11 */ 
+.messageBox {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  /* align-items: cent; */
+  justify-content: space-between;
+  padding:  1rem;
+  border-radius: 100px ;
+  /* border: 1px solid rgb(63, 63, 63); */
+  background-color: #892be222;
+
+}
+.messageBox:focus-within {
+  border: 1px solid #8a2be2;
+}
+.tooltip {
+  position: absolute;
+  top: -40px;
+  display: none;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  text-wrap: nowrap;
+  background-color: #000;
+  padding: 6px 10px;
+  border: 1px solid #3c3c3c;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.596);
+  transition: all 0.3s;
+}
+#messageInput {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+#messageInput:focus ~ #sendButton svg path,
+#messageInput:valid ~ #sendButton svg path {
+  stroke: rgba(255, 255, 255, 0.52); 
+}
+#messageInput::placeholder{
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+#sendButton {
+  /* width: fit-content;
+  height: 100%; */
+  background-color: transparent;
+  color:  #8a2be2;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#sendButton svg {
+  height: 1.7rem;
+  width: 1.7rem;
+  fill:  #8a2be2;
+  transition: all 0.3s;
+}
+#sendButton svg path {
+  transition: all 0.3s;
+}
+

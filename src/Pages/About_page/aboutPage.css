@@ -1,0 +1,124 @@
+/* aboutPage.css */
+
+.about-page {
+  padding: 4rem 2rem;
+  color: inherit;
+
+  min-height: 100vh;
+  /* font-family: 'Segoe UI', sans-serif; */
+}
+
+.about-title {
+  font-size: 3.5rem;
+  /* color: #8a2be2; */
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+display: none;
+   font-family: 'Caveat', cursive;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.profile-section {
+  text-align: center;
+  
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #090c12;
+  border: 1.5px solid #8a2be2;
+  margin-bottom: 1rem;
+display: none;
+
+}
+
+.profile-section h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.role {
+  font-size: 1.2rem;
+  color: #888888;
+  font-style: italic;
+}
+
+.description-section {
+  max-width: 60%;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skills-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skills-list span {
+  background-color: #1e1e1e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid #8a2be2;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.skills-list span:hover {
+  background-color: #8a2be2;
+  color: #0f0f0f;
+}
+.read-more-btn {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem ;
+  text-align: center;
+  background-color: transparent;
+  /* background-color: #8a2be2; */
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.read-more-btn:hover {
+  background-color: #6a1fb8;
+}
+
+.skill-pill {
+  background-color: #1e1e1e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid #8a2be2;
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,182 @@
+
+.navbar {
+    position: sticky;
+    top:0;
+    height: fit-content;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #090c11b0; */
+    padding: 1rem 3rem;
+    z-index: 999;
+    backdrop-filter: blur(5px);
+  }
+  
+  .logo {
+      a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+        text-decoration: none;
+        color: inherit;
+        
+        img{
+            background-color: #895bf5;
+            width: 3.5rem;
+            height: 3.5rem;
+            /* border: 1px solid white; */
+            border-radius: 50%;
+        }
+        h1{
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 0.1rem;
+            transition: 0.2s;
+            &:hover{
+                color: #895bf5;
+            }
+        }
+    }
+    }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    transition: 200ms ease;
+    cursor: pointer;
+    
+    &:has(a:hover) a:not(:hover){
+      opacity: 0.6;
+    }
+  }
+  .nav-links a {
+    transition: 200ms ease;
+           color: inherit;
+
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.23rem;
+    &:hover{
+        color: #895bf5;
+        transform: scale(1.1);
+    }
+    
+  }
+  
+/* From Uiverse.io by TahaShameli */ 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  transform: rotate(180deg);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.7);
+  transition: 0.4s;
+  border-radius: 30px;
+  overflow: hidden;
+    background-color: #ae8cff;
+
+}
+
+.circle {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: #fff000;
+  transition: 0.4s;
+
+}
+
+.switch input:checked + .slider .circle {
+  transform: rotate(0deg) translateX(1.5em) !important;
+}
+
+.switch input:checked + .slider .circle .shine {
+  transform: translate(0%, 0%) !important;
+}
+
+.switch input:checked + .slider .circle .moon {
+  left: -10%;
+  opacity: 1;
+  transform: translateY(-60%);
+}
+
+.moon {
+  position: absolute;
+  left: -100%;
+  top: 50%;
+  opacity: 0;
+  background-color: #8f8c8c;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 99999px;
+  transform: translateY(-50%);
+  transition: all 0.4s;
+  
+}
+
+.shine {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #fff000;
+  border-radius: 1rem;
+  transition: all 0.4s;
+}
+
+.shine-1 {
+  transform: translate(-50%, -375%);
+}
+.shine-2 {
+  transform: translate(175%, -275%);
+}
+.shine-3 {
+  transform: translate(275%, -50%);
+}
+.shine-4 {
+  transform: translate(175%, 175%);
+}
+.shine-5 {
+  transform: translate(-50%, 275%);
+}
+.shine-6 {
+  transform: translate(-275%, 175%);
+}
+.shine-7 {
+  transform: translate(-375%, -50%);
+}
+.shine-8 {
+  transform: translate(-275%, -275%);
+}

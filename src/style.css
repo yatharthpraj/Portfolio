@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    /* padding-top: 3rem; */
+  }
+  body {
+    background-color: #0d1117;
+    overflow-x: hidden;
+    color: white;
+    /* color: #000; */
+    height: 100%;
+    width: 100%;
+    /* background: url("./low-poly-grid-haikei\ \(1\).png"); */
+    background: url("assets/dark-theme.png");
+    /* background: url("assets/light-theme.png"); */
+  }
+  ::selection{
+    background-color: #ae8cff;
+    color: black;
+  }
+  .container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+
+  }
+  
+ .hidden{
+    display: none;
+  } 
+/* General section styling */
+
+  
+/* App.css or index.css */
+body.dark-theme {
+  background-image: url('./assets/dark-theme.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.7s ease-in-out;
+  color: white;
+ 
+}
+
+body.light-theme {
+  background-image: url('./assets/light-theme.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 0.7s ease-in-out;
+  color: black;
+  
+}
+
